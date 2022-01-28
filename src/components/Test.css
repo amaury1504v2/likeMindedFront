@@ -1,0 +1,21 @@
+.btn {
+    background:blue;
+    color: white;
+}
+
+.liste {
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: yellow;
+}
+
+.formulaire {
+    display: flex;
+    margin-left: 2%
+}
+
+.messagerie {
+    margin-right: 15%
+}
