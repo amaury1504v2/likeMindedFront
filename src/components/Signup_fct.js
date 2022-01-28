@@ -28,10 +28,10 @@ export default function Signup_fct() {
     }
 
     return (
-        <div style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover', height: '1000px', width:'100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover', maxHeight: '800px', minHeight: '750px', width:'100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <div className="my-auto">
                 <h2 style={{textAlign: 'center', marginBottom: '60%'}}>Like minded</h2>
-                <h3 style={{textAlign: 'center'}}>Inscrivez vous</h3>
+                <h3 style={{textAlign: 'center'}}>Inscrivez-vous</h3>
                 <br/>
                 <form onSubmit={onPost}>
                     <input
@@ -60,7 +60,7 @@ export default function Signup_fct() {
                 </form>
                 <br/>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <Link to="/login">Je n'ai pas de compte</Link>
+                    <Link to="/login">J'ai un compte</Link>
                 </div>
             </div>
             
