@@ -12,19 +12,19 @@ export default function Signup_fct() {
           .then((result) => {
             //access the results here.... 
             console.log(result.data);
-            window.location.href = '/loginfct'
+            window.location.href = '/login'
         });
     }
 
     function onChangeEmail(e) {
         e.preventDefault()
         email = e.target.value
-        console.log('onChange');
+        console.log('onChangeEmail');
     }
     function onChangePassword(e) {
         e.preventDefault()
         password = e.target.value
-        console.log('onChange');
+        console.log('onChangePassword');
     }
 
     return (
@@ -60,7 +60,7 @@ export default function Signup_fct() {
                 </form>
                 <br/>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <Link to="/login">Je n'ai pas de compte</Link>
+                    <Link to="/login">J'ai un compte</Link>
                 </div>
             </div>
             

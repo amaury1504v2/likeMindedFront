@@ -14,7 +14,7 @@ export default function Login_fct() {
             console.log(result.data);
             localStorage.setItem('token', result.data.token)
             localStorage.setItem('userId', result.data.userId)
-            window.location.href = '/connecte'
+            window.location.href = '/test'
           });
         localStorage.setItem('email', email)
         console.log(localStorage.getItem('email'));
@@ -64,7 +64,7 @@ export default function Login_fct() {
                 </form>
                 <br/>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <Link to="/signup">J'ai un compte</Link>
+                    <Link to="/signup">Je n'ai pas de compte</Link>
                 </div>
             </div>
         </div>
