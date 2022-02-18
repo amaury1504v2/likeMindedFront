@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Test.css'
 import { socket } from '../socket'
+import { Link } from "react-router-dom";
 
 export default function Test() {
     useEffect(()=>{
@@ -35,11 +36,23 @@ export default function Test() {
 
     return (
         <div class='messagerie'>
-            <ul id="liste"></ul>
+            <ul className="nav justify-content-center">
+                <li className="nav-item">
+                    <Link to="/groupes" className="nav-link" href="#">groupes</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/messages" className="nav-link" href="#">messages</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/profile" className="nav-link" href="#">profile</Link>
+                </li>
+                <li>
+                    <button type="button" onClick={(e)=>seDeconnecter(e)} className="btn btn-danger">Se Déconnecter</button>
+                </li>
+            </ul>
             <div class="formulaire">
                 <input type="text" id="msg" name="message" onChange={ (e)=>setMsg(e.target.value) } style={{ width: '1350px' }}></input>
-                <button type="button" onClick={(e)=>submitMessage(e)} className="btn">Envoyer</button>
-                <button type="button" onClick={(e)=>seDeconnecter(e)} className="btn">Se Déconnecter</button>
+                <button type="button" onClick={(e)=>submitMessage(e)} className="btn btn-primary">Envoyer</button>
             </div>
         </div>
     )

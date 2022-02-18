@@ -6,9 +6,11 @@ import Background from '../assets/signup.jpg'
 export default function Signup_fct() {
     let email = null
     let password = null
+    let name = null
+    let surname = null
     function onPost(e) {
         e.preventDefault()
-        axios.post('http://localhost:3001/user/signup', { email, password })
+        axios.post('http://localhost:3001/user/signup', { email, password, name, surname })
           .then((result) => {
             //access the results here.... 
             console.log(result.data);
@@ -21,10 +23,23 @@ export default function Signup_fct() {
         email = e.target.value
         console.log('onChangeEmail');
     }
+
     function onChangePassword(e) {
         e.preventDefault()
         password = e.target.value
         console.log('onChangePassword');
+    }
+
+    function onChangeName(e) {
+        e.preventDefault()
+        name = e.target.value
+        console.log('onChangeName');
+    }
+
+    function onChangeSurname(e) {
+        e.preventDefault()
+        surname = e.target.value
+        console.log('onChangeSurname');
     }
 
     return (
@@ -34,6 +49,26 @@ export default function Signup_fct() {
                 <h3 style={{textAlign: 'center'}}>Inscrivez-vous</h3>
                 <br/>
                 <form onSubmit={onPost}>
+                    <input
+                    type="text"
+                    name="name"
+                    placeholder="name"
+                    value={name}
+                    onChange={onChangeName}
+                    style={{border: 'none', borderRadius: '5px', width: '300px', height: '30px'}}
+                    />
+                    <br/>
+                    <br/>
+                    <input
+                    type="text"
+                    name="surname"
+                    placeholder="surname"
+                    value={surname}
+                    onChange={onChangeSurname}
+                    style={{border: 'none', borderRadius: '5px', width: '300px', height: '30px'}}
+                    />
+                    <br/>
+                    <br/>
                     <input
                     type="text"
                     name="email"

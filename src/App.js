@@ -3,7 +3,10 @@ import Connecte from './components/Connecte';
 import Signup_fct from './components/Signup_fct';
 import Login_fct from './components/Login_fct';
 import Test from './components/Test';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Messages from './components/Messages';
+import Profile from './components/Profile';
+import Groupes from './components/Groupes';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -15,6 +18,9 @@ function App() {
             <Route path="/login" element={<Login_fct />} />
             <Route path="/connecte" element={<Connecte />} />
             <Route path="/test" element={<Test />} />
+            <Route path="/groupes" element={<Groupes />} />
+            <Route path="/messages" element={<Messages />} />
+            <Route path="/profile" element={<Profile />} />
         </Routes> 
       </BrowserRouter>
     </div>
