@@ -90,12 +90,12 @@ export default function Signup_fct() {
                     <br/>
                     <br/>
                     <div style={{display: 'flex'}}>
-                        <button type="sumbit" style={{ border: 'none', background: '#f5cda2', borderRadius: '5px', margin: 'auto'}} >S'inscrire</button>
+                        <button type="submit" style={{ border: 'none', background: '#f5cda2', borderRadius: '5px', margin: 'auto'}} >S'inscrire</button>
                     </div>
                 </form>
                 <br/>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <Link to="/login">J'ai un compte</Link>
+                    <Link to="/login">J'ai déjà un compte</Link>
                 </div>
             </div>
             

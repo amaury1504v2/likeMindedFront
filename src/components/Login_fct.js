@@ -73,28 +73,11 @@ export default function Login_fct() {
                     <br/>
 
                     <div style={{display: 'flex'}}>
-                        <button type="sumbit" style={{ border: 'none', background: '#f5cda2', borderRadius: '5px', margin: 'auto'}} >Se connecter</button>
+                        <button type="submit" style={{ border: 'none', background: '#f5cda2', borderRadius: '5px', margin: 'auto'}} >Se connecter</button>
                     </div>
 
-                    <br />
-                    <br />
-
-                    <FacebookLogin
-                        appId="" //APP ID NOT CREATED YET
-                        fields="name,email,picture"
-                        callback={responseFacebook}
-                    />
-                    <br />
-                    <br />
-
-
-                    <GoogleLogin
-                        clientId="465172562750-e2e8u5vkfnirdh56bn144l0su7ng55a6.apps.googleusercontent.com" 
-                        buttonText="LOGIN WITH GOOGLE"
-                        onSuccess={responseGoogle}
-                        onFailure={responseGoogle}
-                    />
                 </form>
+
                 <br/>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <Link to="/signup">Je n'ai pas de compte</Link>
@@ -103,3 +86,20 @@ export default function Login_fct() {
         </div>
     )
 }
+
+/*
+                    <FacebookLogin
+                        appId="" //APP ID NOT CREATED YET
+                        fields="name,email,picture"
+                        callback={responseFacebook}
+                    />
+                    <br />
+                    <br />
+
+                    <GoogleLogin
+                        clientId="465172562750-e2e8u5vkfnirdh56bn144l0su7ng55a6.apps.googleusercontent.com" 
+                        buttonText="LOGIN WITH GOOGLE"
+                        onSuccess={responseGoogle}
+                        onFailure={responseGoogle}
+                    />
+*/
