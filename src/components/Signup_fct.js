@@ -43,7 +43,7 @@ export default function Signup_fct() {
     }
 
     return (
-        <div style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover', maxHeight: '800px', minHeight: '750px', width:'100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ backgroundImage: `url(${Background})`, backgroundSize: 'cover', maxHeight: '1200px', minHeight: '750px', height:'100vh', width:'100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <div className="my-auto">
                 <h2 style={{textAlign: 'center', marginBottom: '60%'}}>Like minded</h2>
                 <h3 style={{textAlign: 'center'}}>Inscrivez-vous</h3>
